@@ -182,7 +182,7 @@ def localCacheRandomPath(ext='bin'):
 
 
 def downloadFileDirect(url, path):
-    headers = {'User-Agent': 'AigcPanelServer', 'Referer': url}
+    headers = {'User-Agent': 'AIGCPanel-Server', 'Referer': url}
     logInfo('LIB.DownloadFileDirect', {'url': url, 'path': path})
     response = requests.get(url, headers=headers, stream=True, timeout=3600)
     response.raise_for_status()
